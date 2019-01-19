@@ -1,5 +1,6 @@
 package papo.com.apppapolampion;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -13,4 +14,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    /*
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Intent intent = new Intent(MainActivity.this, pick_color.class);
+        startActivity(intent);
+    }
+    */
 }
