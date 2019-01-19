@@ -11,7 +11,7 @@
         android:layout_width="match_parent">
 
         <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/toolbar"
+            android:id="@+id/collapsableToolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
@@ -74,7 +74,7 @@
                 tools:layout_editor_absoluteY="232dp" />
 
             <Button
-                android:id="@+id/.0000000"
+                android:id="@+id/but-on-off"
                 android:layout_width="155dp"
                 android:layout_height="102dp"
                 android:text="Turn On"
