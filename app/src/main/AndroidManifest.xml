@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".select_animation"></activity>
+        <activity android:name=".pick_color" />
+        <activity android:name=".program_select_column" />
+        <activity android:name=".program_select_ring" />
+        <activity android:name=".program_select_pixel" />
+        <activity android:name=".program_select_laumios" />
+        <activity android:name=".program_select_instruction" />
+        <activity
+            android:name=".program_add_event"
+            android:label="@string/title_activity_program_add_event"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

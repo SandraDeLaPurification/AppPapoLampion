@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AppPapoLampion</string>
+    <string name="title_activity_program_add_event">Add event</string>
 </resources>
