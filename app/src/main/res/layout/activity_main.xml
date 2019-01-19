@@ -7,11 +7,11 @@
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/appbar"
-        android:layout_height="192dp"
-        android:layout_width="match_parent">
+        android:layout_width="match_parent"
+        android:layout_height="192dp">
 
         <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/toolbar"
+            android:id="@+id/collapsableToolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
@@ -21,7 +21,7 @@
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"></android.support.v7.widget.Toolbar>
+                android:layout_height="?attr/actionBarSize" />
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
@@ -35,51 +35,63 @@
             android:layout_height="match_parent"
             tools:context=".MainActivity">
 
-            <TextView
-                android:id="@+id/appTitle"
-                android:layout_width="167dp"
-                android:layout_height="64dp"
-                android:text="le Papo."
-                android:textSize="30dp"
-                android:textAlignment="center"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.08" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="541dp"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent">
 
-            <Button
-                android:id="@+id/but-prog"
-                android:layout_width="155dp"
-                android:layout_height="102dp"
-                android:text="Program"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="232dp" />
+                <TextView
+                    android:id="@+id/appTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="le Papo."
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_marginTop="25dp"/>
 
-            <Button
-                android:id="@+id/but-anim"
-                android:layout_width="155dp"
-                android:layout_height="102dp"
-                android:text="Change Animation"
-                tools:layout_editor_absoluteX="34dp"
-                tools:layout_editor_absoluteY="370dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/but-color"
-                android:layout_width="155dp"
-                android:layout_height="102dp"
-                android:text="Change color"
-                tools:layout_editor_absoluteX="217dp"
-                tools:layout_editor_absoluteY="232dp" />
+                    <Button
+                        android:id="@+id/but-prog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Program" />
 
-            <Button
-                android:id="@+id/.0000000"
-                android:layout_width="155dp"
-                android:layout_height="102dp"
-                android:text="Turn On"
-                tools:layout_editor_absoluteX="217dp"
-                tools:layout_editor_absoluteY="370dp" />
+                    <Button
+                        android:id="@+id/but-on-off"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Turn On" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/but-color"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change color" />
+
+                    <Button
+                        android:id="@+id/but-anim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Animation" />
+                </LinearLayout>
+
+            </LinearLayout>
 
         </android.support.constraint.ConstraintLayout>
     </android.support.v4.widget.NestedScrollView>
