@@ -1,8 +1,11 @@
 package papo.com.apppapolampion;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -32,5 +35,14 @@ public class program_select_instruction extends AppCompatActivity {
 
 
         listView.setAdapter(adapter);
+
+        Button btn_next_page = findViewById(R.id.btn_next_page);
+
+
+    }
+
+    public void setNextPage(View view){
+        Intent intent = new Intent(program_select_instruction.this, pick_color.class);
+        startActivity(intent);
     }
 }

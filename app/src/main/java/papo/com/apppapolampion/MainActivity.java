@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     public void startChangeColorActivity(View view)
     {
         Intent intent = new Intent(this, pick_color.class);
-        startActivity(intent);
+        Intent intent2 = new Intent(this, program_select_instruction.class);
+        startActivity(intent2);
     }
     
     public void startTurnOnActivity(View view)
@@ -43,6 +44,6 @@ public class MainActivity extends AppCompatActivity {
         super.onResume();
         Intent intent = new Intent(MainActivity.this, program_select_instruction.class);
         startActivity(intent);
-    }
+    }*/
 
 }
