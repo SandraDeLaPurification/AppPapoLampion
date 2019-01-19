@@ -16,6 +16,7 @@ public class program_select_instruction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_program_select_instruction);
 
+        ListView listView = (ListView) findViewById(R.id.listInstruction);
         List<String> planetsList = new ArrayList<String>();
 
         planetsList.add("Freddy Mercury");
@@ -26,10 +27,10 @@ public class program_select_instruction extends AppCompatActivity {
         planetsList.add("Uranus");
         planetsList.add("Neptune");
 
-        ArrayAdapter adapter = new ArrayAdapter<String>(this,
-                R.layout.activity_program_select_instruction, planetsList);
+        final ArrayAdapter adapter = new ArrayAdapter<String>(this,
+                R.layout.select_instruction_listview_line, R.id.select_instruction_textview, planetsList);
 
-        ListView listView = (ListView) findViewById(R.id.listInstruction);
+
         listView.setAdapter(adapter);
     }
 }

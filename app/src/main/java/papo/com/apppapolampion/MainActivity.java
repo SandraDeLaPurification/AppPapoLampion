@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        Intent intent = new Intent(MainActivity.this, pick_color.class);
+        Intent intent = new Intent(MainActivity.this, program_select_instruction.class);
         startActivity(intent);
     }
-    */
+
 }
