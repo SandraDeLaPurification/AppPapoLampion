@@ -62,13 +62,15 @@
                         android:id="@+id/but-prog"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Program" />
+                        android:text="Program"
+                        android:onClick="startProgramActivity"/>
 
                     <Button
                         android:id="@+id/but-on-off"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Turn On" />
+                        android:text="Turn On"
+                        android:onClick="startTurnOnActivity"/>
 
                 </LinearLayout>
 
@@ -82,13 +84,15 @@
                         android:id="@+id/but-color"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Change color" />
+                        android:text="Change color"
+                        android:onClick="startChangeColorActivity"/>
 
                     <Button
                         android:id="@+id/but-anim"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Change Animation" />
+                        android:text="Change Animation"
+                        android:onClick="startChangeAnimationActivity"/>
                 </LinearLayout>
 
             </LinearLayout>
