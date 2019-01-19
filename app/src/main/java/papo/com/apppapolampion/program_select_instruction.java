@@ -18,7 +18,7 @@ public class program_select_instruction extends AppCompatActivity {
 
         List<String> planetsList = new ArrayList<String>();
 
-        planetsList.add("Mercury");
+        planetsList.add("Freddy Mercury");
         planetsList.add("Venus");
         planetsList.add("Mars");
         planetsList.add("Jupiter");
