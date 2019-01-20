@@ -20,25 +20,21 @@ public class program_select_instruction extends AppCompatActivity {
         setContentView(R.layout.activity_program_select_instruction);
 
         ListView listView = (ListView) findViewById(R.id.listInstruction);
-        List<String> planetsList = new ArrayList<String>();
+        List<String> instructions = new ArrayList<String>();
 
-        planetsList.add("Freddy Mercury");
-        planetsList.add("Venus");
-        planetsList.add("Mars");
-        planetsList.add("Jupiter");
-        planetsList.add("Saturn");
-        planetsList.add("Uranus");
-        planetsList.add("Neptune");
+        instructions.add("Freddy Mercury");
+        instructions.add("Venus");
+        instructions.add("Mars");
+        instructions.add("Jupiter");
+        instructions.add("Saturn");
+        instructions.add("Uranus");
+        instructions.add("Neptune");
 
         final ArrayAdapter adapter = new ArrayAdapter<String>(this,
-                R.layout.select_instruction_listview_line, R.id.select_instruction_textview, planetsList);
+                R.layout.select_instruction_listview_line, R.id.select_instruction_textview, instructions);
 
 
         listView.setAdapter(adapter);
-
-        Button btn_next_page = findViewById(R.id.btn_next_page);
-
-
     }
 
     public void setNextPage(View view){
