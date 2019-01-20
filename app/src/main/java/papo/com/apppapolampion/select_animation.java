@@ -17,8 +17,10 @@ public class select_animation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_animation);
 
-        ListView listView = (ListView) findViewById(R.id.listInstruction);
+        ListView listView = (ListView) findViewById(R.id.list_animation);
         List<String> animations = new ArrayList<String>();
+
+        animations.add("Rainbow");
 
         final ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.select_instruction_listview_line, R.id.select_instruction_textview, animations);

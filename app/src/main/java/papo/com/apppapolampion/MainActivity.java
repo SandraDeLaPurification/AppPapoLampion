@@ -5,6 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.papo.lib.Laumio;
+
+import org.eclipse.paho.client.mqttv3.MqttException;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,6 +17,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(this.getIntent());
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        try {
+            Laumio laumio = new Laumio("tcp://mpd.lan:1883");
+        } catch (MqttException e) {
+            e.printStackTrace();
+        }
     }
 
     public void startProgramActivity(View view)

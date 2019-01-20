@@ -17,8 +17,10 @@ public class program_select_laumios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_program_select_laumios);
 
-        ListView listView = (ListView) findViewById(R.id.listInstruction);
+        ListView listView = (ListView) findViewById(R.id.list_laumios);
         List<String> laumios = new ArrayList<String>();
+
+        laumios.add("1");
 
         final ArrayAdapter adapter = new ArrayAdapter<String>(this,
                 R.layout.select_instruction_listview_line, R.id.select_instruction_textview, laumios);
